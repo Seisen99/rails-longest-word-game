@@ -38,3 +38,16 @@ li {
   inline-size: 50px;
   white-space: 10px;
 }
+
+.walk {
+  position: absolute;
+  bottom: auto;
+  width: 10%;
+  margin-top: 29.5%;
+  animation: walk-walk 15s normal infinite ease-in-out;
+}
+
+@keyframes walk-walk {
+  from{left:0px}
+  to{left:100%}
+}

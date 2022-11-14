@@ -19,4 +19,15 @@ class GamesController < ApplicationController
   end
 
   def home; end
+
+  def attempt(word)
+    url = "https://wagon-dictionary.herokuapp.com/#{word}"
+
+    URI.open(url) do |word|
+      # words =
+      guess = JSON.parse(word.read)
+      # p words['found']
+      # p words['word']
+    end
+  end
 end
